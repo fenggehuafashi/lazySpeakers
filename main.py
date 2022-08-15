@@ -16,7 +16,7 @@ CHUNK = 1024
 # 只读方式打开wav文件
 wav_path = os.getcwd() + '\\slient.wav'
 
-# 输入判断
+# 输入判断,自定义输入时间间隔.
 while True:
     play_interval = input("请输入播放间隔时间(min), 默认15min:")
     # 默认时间间隔
@@ -36,6 +36,7 @@ while True:
     else:
         print("必须输入数字,范围为0-1440!!!")
 
+# play_interval = 15 * 60
 
 # 使用pyaudio播放音频文件
 def waker():
